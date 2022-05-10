@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.17.6
+Name=AlveyCoin Core
+Comment=Connect to the AlveyCoin P2P Network
+Exec=alvey-qt %u
+Terminal=false
+Type=Application
+Icon=alvey128
+MimeType=x-scheme-handler/alvey;
+Categories=Network;
+StartupWMClass=AlveyCoin-qt
+Name[en_US]=alvey-qt

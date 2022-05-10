@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.17.6
+Name=AlveyCoin Core Testnet
+Comment=Connect to the AlveyCoin P2P Network Testnet
+Exec=alvey-qt -testnet %u
+Terminal=false
+Type=Application
+Icon=alveytestnet128
+MimeType=x-scheme-handler/alvey;
+Categories=Network;
+StartupWMClass=AlveyCoin-qt-testnet
+Name[en_US]=alvey-qt-testnet
