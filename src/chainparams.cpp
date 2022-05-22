@@ -108,10 +108,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00"); // alvey
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000100510051"); // alvey
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00"); // 1405000
+        consensus.defaultAssumeValid = uint256S("0x0000213497fb498607f4712b19e6a35967d7692caf3857e39e95fe41445fe9dd"); // 80
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -162,13 +162,24 @@ public:
         checkpointData = {
             {
                 { 0, uint256S("000000001421468e58e0e1fd8ce030ccb49c950f0d342896f693f445b4abbc8b")},
+                { 80, uint256S("0000213497fb498607f4712b19e6a35967d7692caf3857e39e95fe41445fe9dd")},
+                { 160, uint256S("0000500d44eb0a72807e4d1215692c3dd369c54ca14a57bea1bade256bcf098d")},
+                { 250, uint256S("0000918268d7fc28859dc853121a8ae0c729fc910a978ac194f8fa3bd94f9a2f")},
+                { 320, uint256S("0000139ba53f20660223fc0e3dde40d3d474d55f58d27f5f1534fbe1d3f63c92")},
+                { 420, uint256S("0000f02e4f98c84eea5057cf477e302ebe4d8d6b2606f0a447187dd6c443ad11")},
+                { 500, uint256S("0000655ba9019f81840bfd57fe9edc83526b4319ea31b2a9479fc7ae55162de3")},
+                { 550, uint256S("0000dbd24b8a4934a5c20f24f7c158d58c62e3799b3d2ae47519b710ac0aace7")},
+                { 600, uint256S("00002afe40b2570b70267549721f7e585ec2519b796aa526c0220cd134dfb921")},
+
+                
+                
                 
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block 87ee4ec601b335d411e01378936e21044b1a47a3d989feaaaed0e8eaa2929e4b (height 1407838)
-            1650755170, // * UNIX timestamp of last known number of transactions
+            1653080812, // * UNIX timestamp of last known number of transactions
             0, // * total number of transactions between genesis and that timestamp
             //   (the tx=... number in the SetBestChain debug.log lines)
             0.0842613440826197 // * estimated number of transactions per second after that timestamp
@@ -506,7 +517,7 @@ public:
         consensus.QIP6Height = consensus.nBlocktimeDownscaleFactor*500 + 500;
         consensus.QIP7Height = 0; // QIP7 activated on regtest
 
-        // LVY have 500 blocks of maturity, increased values for regtest in unit tests in order to correspond with it
+        // ALV have 500 blocks of maturity, increased values for regtest in unit tests in order to correspond with it
         consensus.nSubsidyHalvingInterval = 750;
         consensus.nSubsidyHalvingIntervalV2 = consensus.nBlocktimeDownscaleFactor*750;
         consensus.nRuleChangeActivationThreshold = consensus.nBlocktimeDownscaleFactor*558; // 75% for testchains

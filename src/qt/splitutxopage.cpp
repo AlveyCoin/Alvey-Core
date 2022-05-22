@@ -107,7 +107,7 @@ void SplitUTXOPage::setModel(WalletModel *_model)
     if (m_model && m_model->getOptionsModel())
         connect(m_model->getOptionsModel(), &OptionsModel::displayUnitChanged, this, &SplitUTXOPage::updateDisplayUnit);
 
-    // update the display unit, to not use the default ("LVY")
+    // update the display unit, to not use the default ("ALV")
     updateDisplayUnit();
 
     bCreateUnsigned = m_model->createUnsigned();

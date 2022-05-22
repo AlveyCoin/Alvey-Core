@@ -1,5 +1,5 @@
-#ifndef LVYDELEGATION_H
-#define LVYDELEGATION_H
+#ifndef ALVDELEGATION_H
+#define ALVDELEGATION_H
 #include <string>
 #include <vector>
 #include <map>

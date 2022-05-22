@@ -85,7 +85,7 @@ class AlveyCoinARC20Test(BitcoinTestFramework):
             */
             contract ARC20Token is SafeMath {
                 string public constant standard = 'Token 0.1';
-                uint8 public constant decimals = 8; // it's recommended to set decimals to 8 in LVY
+                uint8 public constant decimals = 8; // it's recommended to set decimals to 8 in ALV
 
                 // you need change the following three values
                 string public constant name = 'LRC TEST';

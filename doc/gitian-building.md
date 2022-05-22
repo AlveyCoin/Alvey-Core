@@ -10,7 +10,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to alvey.org.
+to alveychain.com.
 
 More independent Gitian builders are needed, which is why this guide exists.
 It is preferred you follow these steps yourself instead of using someone else's
@@ -313,8 +313,8 @@ Clone the git repositories for alvey and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/alveyproject/alvey --recursive
-git clone https://github.com/alveyproject/gitian.sigs.git
+git clone https://github.com/AlveyCoin/Alvey-Core --recursive
+git clone https://github.com/AlveyCoin/gitian.sigs.git
 ```
 
 Setting up the Gitian image
@@ -380,8 +380,7 @@ Output from `gbuild` will look something like
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/alveyproject/alvey
-    ... (new tags, new branch etc)
+    From https://github.com/AlveyCoin/Alvey-Core    ... (new tags, new branch etc)
     --- Building for trusty amd64 ---
     Stopping target if it is up
     Making a new image copy
@@ -458,7 +457,7 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/alveyproject/alvey-detached-sigs.git
+git clone https://github.com/AlveyCoin/Alvey-Core-detached-sigs.git
 
 BTCPATH=/some/root/path/alvey
 SIGPATH=/some/root/path/alvey-detached-sigs
@@ -490,5 +489,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[alveyproject/gitian.sigs](https://github.com/alveyproject/gitian.sigs/) repository, or if that's not possible create a pull
-request. You can also mail the files to Jordan Earls (earlz@alvey.org) and he will commit them.
+[alveyproject/gitian.sigs](https://github.com/AlveyCoin/gitian.sigs/) repository, or if that's not possible create a pull
+request. You can also mail the files to Jordan Earls (earlz@alveychain.com) and he will commit them.

@@ -148,11 +148,11 @@
     </message>
     <message>
         <source>These are your AlveyCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>송금이 가능한 LVY 주소입니다. 송금 전에 반드시 주소와 금액이 정확한지 확인해주세요. </translation>
+        <translation>송금이 가능한 ALV 주소입니다. 송금 전에 반드시 주소와 금액이 정확한지 확인해주세요. </translation>
     </message>
     <message>
         <source>These are your AlveyCoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>지불 수신용 LVY주소. 신규 주소를 만들려면 'Create new receiving address' 버튼을 사용하세요.</translation>
+        <translation>지불 수신용 ALV주소. 신규 주소를 만들려면 'Create new receiving address' 버튼을 사용하세요.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -257,8 +257,8 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LVYS&lt;/b&gt;!</source>
-        <translation>경고: 암호화 이후 비밀번호를 잃어버리면 &lt;b&gt;지갑에 있는 모든 LVY을 잃게됩니다&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALVS&lt;/b&gt;!</source>
+        <translation>경고: 암호화 이후 비밀번호를 잃어버리면 &lt;b&gt;지갑에 있는 모든 ALV을 잃게됩니다&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -364,7 +364,7 @@
     </message>
     <message>
         <source>Send coins to a AlveyCoin address</source>
-        <translation type="unfinished">LVY 주소로 LVY 코인 보내기</translation>
+        <translation type="unfinished">ALV 주소로 ALV 코인 보내기</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -411,11 +411,11 @@
         <translation type="unfinished">거래 기록 조회</translation>
     </message>
     <message>
-        <source>&amp;LRC Tokens</source>
+        <source>&amp;ARC Tokens</source>
         <translation type="unfinished">LRC 토큰</translation>
     </message>
     <message>
-        <source>LRC Tokens (send, receive or add Tokens in list)</source>
+        <source>ARC Tokens (send, receive or add Tokens in list)</source>
         <translation type="unfinished">LRC 토큰 (입출금 또는 리스트에 추가)</translation>
     </message>
     <message>
@@ -520,7 +520,7 @@
     </message>
     <message>
         <source>Sign messages with your AlveyCoin addresses to prove you own them</source>
-        <translation type="unfinished">소유하고 있는 LVY 주소의 키로 메시지 서명을 하여 해당 LVY 주소의 소유권을 증명하세요. </translation>
+        <translation type="unfinished">소유하고 있는 ALV 주소의 키로 메시지 서명을 하여 해당 ALV 주소의 소유권을 증명하세요. </translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -653,7 +653,7 @@
     <message numerus="yes">
         <source>%n active connection(s) to AlveyCoin network</source>
         <translation type="unfinished">
-            <numerusform>LVY네트워크에 대한 활성화된 연결은 %n 개입니다.</numerusform>
+            <numerusform>ALV네트워크에 대한 활성화된 연결은 %n 개입니다.</numerusform>
         </translation>
     </message>
     <message>
@@ -720,7 +720,7 @@
     </message>
     <message>
         <source>AlveyCoin</source>
-        <translation type="unfinished">LVY</translation>
+        <translation type="unfinished">ALV</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1375,8 +1375,8 @@
         <translation type="unfinished">가스 상한액. 디폴트 = %1, 최고 = %2.</translation>
     </message>
     <message>
-        <source>Gas price: LVY price per gas unit. Default = %1, Min = %2</source>
-        <translation type="unfinished">가스 단가: 가스 유닛에 대한 LVY 가격. 디폴트 = %1, 최저 = %2.</translation>
+        <source>Gas price: ALV price per gas unit. Default = %1, Min = %2</source>
+        <translation type="unfinished">가스 단가: 가스 유닛에 대한 ALV 가격. 디폴트 = %1, 최저 = %2.</translation>
     </message>
 </context>
 <context>
@@ -1415,7 +1415,7 @@
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is not a valid AlveyCoin address.</source>
-        <translation>입력한 주소 %1는 유효한 LVY 주소가 아닙니다. </translation>
+        <translation>입력한 주소 %1는 유효한 ALV 주소가 아닙니다. </translation>
     </message>
     <message>
         <source>Address &quot;%1&quot; already exists as a receiving address with label &quot;%2&quot; and so cannot be added as a sending address.</source>
@@ -1552,7 +1552,7 @@
     </message>
     <message>
         <source>AlveyCoin</source>
-        <translation>LVY</translation>
+        <translation>ALV</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1564,7 +1564,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the AlveyCoin block chain.</source>
-        <translation>%1이 LVY 블록체인을 다운로드 및 저장할 예정입니다. </translation>
+        <translation>%1이 ALV 블록체인을 다운로드 및 저장할 예정입니다. </translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1611,7 +1611,7 @@
     </message>
     <message>
         <source>Attempting to spend alveys that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>네트워크는 미확인된 거래에 속한 LVY 사용을 승인하지 않습니다 </translation>
+        <translation>네트워크는 미확인된 거래에 속한 ALV 사용을 승인하지 않습니다 </translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1675,7 +1675,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     <name>OpenURIDialog</name>
     <message>
         <source>Open alvey URI</source>
-        <translation>LVY URI 열기</translation>
+        <translation>ALV URI 열기</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -1837,7 +1837,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     </message>
     <message>
         <source>Connect to the AlveyCoin network through a SOCKS5 proxy.</source>
-        <translation type="vanished">SOCKS5 프록시를 통해 LVY 네트워크 연결</translation>
+        <translation type="vanished">SOCKS5 프록시를 통해 ALV 네트워크 연결</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -2001,15 +2001,15 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     </message>
     <message>
         <source>Automatically open the AlveyCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">라우터에서 자동으로 LVY 클라이언트 실행하기. 해당 기능은 라우터에 UPnP 옵션이 활성화되어 있을 경우에만 유효합니다. </translation>
+        <translation type="unfinished">라우터에서 자동으로 ALV 클라이언트 실행하기. 해당 기능은 라우터에 UPnP 옵션이 활성화되어 있을 경우에만 유효합니다. </translation>
     </message>
     <message>
         <source>Connect to the AlveyCoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">SOCKS5 프록시를 통해 LVY 네트워크 연결</translation>
+        <translation type="unfinished">SOCKS5 프록시를 통해 ALV 네트워크 연결</translation>
     </message>
     <message>
         <source>Connect to the AlveyCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation type="unfinished">Tor 히든 서비스에서 별도의 SOCKS5 프록시를 통해 LVY 네트워크 연결</translation>
+        <translation type="unfinished">Tor 히든 서비스에서 별도의 SOCKS5 프록시를 통해 ALV 네트워크 연결</translation>
     </message>
     <message>
         <source>User Interface &amp;style:</source>
@@ -2240,7 +2240,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     </message>
     <message>
         <source>Enter a AlveyCoin address (e.g. %1)</source>
-        <translation>LVY 주소를 입력해주세요 (예시, %1)</translation>
+        <translation>ALV 주소를 입력해주세요 (예시, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2371,7 +2371,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     </message>
 </context>
 <context>
-    <name>LVYToken</name>
+    <name>ALVToken</name>
     <message>
         <source>Form</source>
         <translation type="unfinished">서식</translation>
@@ -2548,7 +2548,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     </message>
     <message>
         <source>Send coins to a AlveyCoin address</source>
-        <translation type="vanished">LVY 주소로 LVY 코인 보내기</translation>
+        <translation type="vanished">ALV 주소로 ALV 코인 보내기</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -2564,7 +2564,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     </message>
     <message>
         <source>AlveyCoin</source>
-        <translation type="vanished">LVY</translation>
+        <translation type="vanished">ALV</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -2588,7 +2588,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     </message>
     <message>
         <source>Sign messages with your AlveyCoin addresses to prove you own them</source>
-        <translation type="vanished">소유하고 있는 LVY 주소의 키로 메시지 서명을 하여 해당 LVY 주소의 소유권을 증명하세요. </translation>
+        <translation type="vanished">소유하고 있는 ALV 주소의 키로 메시지 서명을 하여 해당 ALV 주소의 소유권을 증명하세요. </translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified AlveyCoin addresses</source>
@@ -2629,7 +2629,7 @@ Please make sure to keep an updated antivirus and operating system. We can not r
     <message numerus="yes">
         <source>%n active connection(s) to AlveyCoin network</source>
         <translation type="vanished">
-            <numerusform>LVY네트워크에 대한 활성화된 연결은 %n 개입니다.</numerusform>
+            <numerusform>ALV네트워크에 대한 활성화된 연결은 %n 개입니다.</numerusform>
         </translation>
     </message>
     <message>
@@ -3731,7 +3731,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <source>Warning: Invalid AlveyCoin address</source>
-        <translation>경고: 무효한 LVY 주소</translation>
+        <translation>경고: 무효한 ALV 주소</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3920,8 +3920,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
         <translation type="unfinished">자금과 데이터를 받을 컨트랙트 주소</translation>
     </message>
     <message>
-        <source>The amount in LVY to send. Default = 0.</source>
-        <translation type="unfinished">보낼 LVY 개수. 디폴트는 0</translation>
+        <source>The amount in ALV to send. Default = 0.</source>
+        <translation type="unfinished">보낼 ALV 개수. 디폴트는 0</translation>
     </message>
     <message>
         <source>The alvey address that will be used as sender.</source>
@@ -3960,8 +3960,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
         <translation type="unfinished">가스 상한액. 디폴트 = %1, 최고 = %2.</translation>
     </message>
     <message>
-        <source>Gas price: LVY price per gas unit. Default = %1, Min = %2</source>
-        <translation type="unfinished">가스 단가: 가스 유닛에 대한 LVY 가격. 디폴트 = %1, 최저 = %2.</translation>
+        <source>Gas price: ALV price per gas unit. Default = %1, Min = %2</source>
+        <translation type="unfinished">가스 단가: 가스 유닛에 대한 ALV 가격. 디폴트 = %1, 최저 = %2.</translation>
     </message>
 </context>
 <context>
@@ -4019,8 +4019,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
         <translation type="unfinished">가스 상한액. 디폴트 = %1, 최고 = %2.</translation>
     </message>
     <message>
-        <source>Gas price: LVY price per gas unit. Default = %1, Min = %2</source>
-        <translation type="unfinished">가스 단가: 가스 유닛에 대한 LVY 가격. 디폴트 = %1, 최저 = %2.</translation>
+        <source>Gas price: ALV price per gas unit. Default = %1, Min = %2</source>
+        <translation type="unfinished">가스 단가: 가스 유닛에 대한 ALV 가격. 디폴트 = %1, 최저 = %2.</translation>
     </message>
     <message>
         <source>Are you sure you want to send? &lt;br /&gt;&lt;br /&gt;</source>
@@ -4066,7 +4066,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive alveys sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>소유하고 계신 주소로 메시지/협의에 대해 서명하여 해당 주소를 통해 LVY을 받을 수 있음을 증명할 수 있습니다. 피싱 공격을 예방하기 위해 명확하지 않은 내용 또는 랜덤 메시지에 대한 서명은 삼가 하시고 메시지에 대해 충분히 동의할 경우에만 서명하세요. </translation>
+        <translation>소유하고 계신 주소로 메시지/협의에 대해 서명하여 해당 주소를 통해 ALV을 받을 수 있음을 증명할 수 있습니다. 피싱 공격을 예방하기 위해 명확하지 않은 내용 또는 랜덤 메시지에 대한 서명은 삼가 하시고 메시지에 대해 충분히 동의할 경우에만 서명하세요. </translation>
     </message>
     <message>
         <source>The AlveyCoin address to sign the message with</source>
@@ -4223,8 +4223,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
         <translation type="unfinished">스테이킹</translation>
     </message>
     <message>
-        <source>0.000 000 00 LVY</source>
-        <translation type="unfinished">0.000 000 00 LVY</translation>
+        <source>0.000 000 00 ALV</source>
+        <translation type="unfinished">0.000 000 00 ALV</translation>
     </message>
     <message>
         <source>Staking</source>
@@ -4243,8 +4243,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
         <translation type="unfinished">블록 보상</translation>
     </message>
     <message>
-        <source>4 LVY/Block</source>
-        <translation type="unfinished">4 LVY / 블록</translation>
+        <source>4 ALV/Block</source>
+        <translation type="unfinished">4 ALV / 블록</translation>
     </message>
     <message>
         <source>Network weight:</source>

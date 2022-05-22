@@ -1,9 +1,9 @@
-#ifndef LVYVERSIONCHECKER_H
-#define LVYVERSIONCHECKER_H
+#ifndef ALVVERSIONCHECKER_H
+#define ALVVERSIONCHECKER_H
 
 #include <QObject>
 
-#define LVY_RELEASES "https://github.com/alveyproject/alvey/releases"
+#define ALV_RELEASES "https://github.com/AlveyCoin/Alvey-Core/releases"
 
 class Version {
 
@@ -95,4 +95,4 @@ private:
     Version currentVersion;
 };
 
-#endif // LVYVERSIONCHECKER_H
+#endif // ALVVERSIONCHECKER_H

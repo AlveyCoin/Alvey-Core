@@ -47,7 +47,7 @@ from the root of the repository.
 
 1. Clone the AlveyCoin Core source code:
     ```shell
-    git clone --recursive https://github.com/alveyproject/alvey.git
+    git clone --recursive https://github.com/AlveyCoin/Alvey-Core.git
     cd alvey
     ```
 

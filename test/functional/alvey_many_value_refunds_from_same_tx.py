@@ -30,10 +30,10 @@ class AlveyCoinManyValueRefundsFromSameTxTest(BitcoinTestFramework):
         contract_address = self.node.createcontract(contract_bytecode)['address']
         self.node.generate(1)
         tx = CTransaction()
-        tx.vin = [make_vin(self.node, int(2*(COIN + LVY_MIN_GAS_PRICE*100000)))]
+        tx.vin = [make_vin(self.node, int(2*(COIN + ALV_MIN_GAS_PRICE*100000)))]
         tx.vout = []
-        tx.vout.append(CTxOut(int(COIN), CScript([b"\x04", CScriptNum(100000), CScriptNum(LVY_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])))
-        tx.vout.append(CTxOut(int(COIN), CScript([b"\x04", CScriptNum(100000), CScriptNum(LVY_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])))
+        tx.vout.append(CTxOut(int(COIN), CScript([b"\x04", CScriptNum(100000), CScriptNum(ALV_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])))
+        tx.vout.append(CTxOut(int(COIN), CScript([b"\x04", CScriptNum(100000), CScriptNum(ALV_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])))
 
         signed_tx_raw = self.node.signrawtransactionwithwallet(bytes_to_hex_str(tx.serialize()))['hex']
         self.node.sendrawtransaction(signed_tx_raw)

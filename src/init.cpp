@@ -634,7 +634,7 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/alveyproject/alvey>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/AlveyCoin/Alvey-Core>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i").translated, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

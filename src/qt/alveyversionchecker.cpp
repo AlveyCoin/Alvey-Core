@@ -29,7 +29,7 @@ bool AlveyCoinVersionChecker::newVersionAvailable()
 QList<Version> AlveyCoinVersionChecker::getVersions()
 {
     QNetworkAccessManager manager;
-    QNetworkReply *response = manager.get(QNetworkRequest(QUrl(LVY_RELEASES)));
+    QNetworkReply *response = manager.get(QNetworkRequest(QUrl(ALV_RELEASES)));
     QEventLoop event;
     connect(response, &QNetworkReply::finished, &event, &QEventLoop::quit);
     event.exec();

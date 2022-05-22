@@ -8,7 +8,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/alveyproject/alvey-detached-sigs.git"
+- "url": "https://github.com/AlveyCoin/Alvey-Core-detached-sigs.git"
   "dir": "signature"
 files:
 - "alvey-osx-unsigned.tar.gz"

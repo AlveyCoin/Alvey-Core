@@ -1,5 +1,5 @@
-#ifndef LVY_QT_STAKEPAGE_H
-#define LVY_QT_STAKEPAGE_H
+#ifndef ALV_QT_STAKEPAGE_H
+#define ALV_QT_STAKEPAGE_H
 
 #include <interfaces/wallet.h>
 
@@ -63,4 +63,4 @@ private:
     void updateAnnualROI();
 };
 
-#endif // LVY_QT_STAKEPAGE_H
+#endif // ALV_QT_STAKEPAGE_H

@@ -15,7 +15,7 @@ enum class VMKind
 {
     Interpreter,
     Legacy,
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
     DLL
 #endif
 };

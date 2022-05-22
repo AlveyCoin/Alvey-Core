@@ -7,7 +7,7 @@
 #include <pthread.h>
 #endif
 
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
 
 #include <boost/core/null_deleter.hpp>
 #include <boost/log/attributes/clock.hpp>

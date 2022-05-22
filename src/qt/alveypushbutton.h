@@ -1,5 +1,5 @@
-#ifndef LVYPUSHBUTTON_H
-#define LVYPUSHBUTTON_H
+#ifndef ALVPUSHBUTTON_H
+#define ALVPUSHBUTTON_H
 #include <QPushButton>
 #include <QStyleOptionButton>
 #include <QIcon>
@@ -21,4 +21,4 @@ private:
     QIcon m_downIcon;
 };
 
-#endif // LVYPUSHBUTTON_H
+#endif // ALVPUSHBUTTON_H

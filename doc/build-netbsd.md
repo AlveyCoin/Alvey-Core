@@ -23,7 +23,7 @@ pkg-config
 python37
 gmp
 
-git clone https://github.com/alveyproject/alvey --recursive
+git clone https://github.com/AlveyCoin/Alvey-Core --recursive
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.

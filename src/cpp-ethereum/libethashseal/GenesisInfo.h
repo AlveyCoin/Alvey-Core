@@ -72,7 +72,7 @@ enum class Network
     ByzantiumToConstantinopleFixAt5 = 104,
 
     Special = 0xff,         ///< Something else.
-    alveyMainNetwork = 9,    ///< LVY Homestead + EIP150 + EIP158 Rules active from block 0 to enum class Network
+    alveyMainNetwork = 9,    ///< ALV Homestead + EIP150 + EIP158 Rules active from block 0 to enum class Network
     alveyTestNetwork = 10
 };
 

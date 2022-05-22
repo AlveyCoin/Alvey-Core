@@ -1,5 +1,5 @@
-#ifndef LVY_CONVERT_H
-#define LVY_CONVERT_H
+#ifndef ALV_CONVERT_H
+#define ALV_CONVERT_H
 
 ////////////////////////////////////////////////////// alvey
 #include <uint256.h>
@@ -62,4 +62,4 @@ inline uint160 u160Touint(const dev::u160& in)
 }
 //////////////////////////////////////////////////////
 
-#endif // LVY_CONVERT_H
+#endif // ALV_CONVERT_H

@@ -1,5 +1,5 @@
-#ifndef LVYHWITOOL_H
-#define LVYHWITOOL_H
+#ifndef ALVHWITOOL_H
+#define ALVHWITOOL_H
 
 #include <QObject>
 #include <QString>
@@ -253,4 +253,4 @@ private:
     AlveyCoinHwiToolPriv* d;
 };
 
-#endif // LVYHWITOOL_H
+#endif // ALVHWITOOL_H

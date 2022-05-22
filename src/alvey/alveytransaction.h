@@ -1,5 +1,5 @@
-#ifndef LVYTRANSACTION_H
-#define LVYTRANSACTION_H
+#ifndef ALVTRANSACTION_H
+#define ALVTRANSACTION_H
 
 #include <libethereum/Transaction.h>
 

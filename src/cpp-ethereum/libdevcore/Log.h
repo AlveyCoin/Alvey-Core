@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
 
 #include <boost/log/attributes/scoped_attribute.hpp>
 #include <boost/log/sources/global_logger_storage.hpp>

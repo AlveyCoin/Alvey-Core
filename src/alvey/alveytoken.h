@@ -1,5 +1,5 @@
-#ifndef LVYTOKEN_H
-#define LVYTOKEN_H
+#ifndef ALVTOKEN_H
+#define ALVTOKEN_H
 #include <string>
 #include <vector>
 #include <map>
@@ -114,4 +114,4 @@ private:
     AlveyCoinTokenData* d;
 };
 
-#endif // LVYTOKEN_H
+#endif // ALVTOKEN_H

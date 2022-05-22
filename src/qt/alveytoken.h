@@ -1,5 +1,5 @@
-#ifndef LRCTOKEN_H
-#define LRCTOKEN_H
+#ifndef ARCTOKEN_H
+#define ARCTOKEN_H
 
 #include <qt/sendtokenpage.h>
 #include <qt/receivetokenpage.h>
@@ -17,16 +17,16 @@ class PlatformStyle;
 class QMenu;
 
 namespace Ui {
-class LVYToken;
+class ALVToken;
 }
 
-class LVYToken : public QWidget
+class ALVToken : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit LVYToken(const PlatformStyle *platformStyle, QWidget *parent = 0);
-    ~LVYToken();
+    explicit ALVToken(const PlatformStyle *platformStyle, QWidget *parent = 0);
+    ~ALVToken();
 
     void setModel(WalletModel *_model);
     void setClientModel(ClientModel *clientModel);
@@ -54,7 +54,7 @@ public Q_SLOTS:
     void on_addToken();
 
 private:
-    Ui::LVYToken *ui;
+    Ui::ALVToken *ui;
     SendTokenPage* m_sendTokenPage;
     ReceiveTokenPage* m_receiveTokenPage;
     AddTokenPage* m_addTokenPage;
@@ -71,4 +71,4 @@ private:
     TokenListWidget* m_tokenList;
 };
 
-#endif // LRCTOKEN_H
+#endif // ARCTOKEN_H

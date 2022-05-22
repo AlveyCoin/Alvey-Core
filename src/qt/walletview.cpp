@@ -77,7 +77,7 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
     sendToContractPage = new SendToContract(platformStyle);
     callContractPage = new CallContract(platformStyle);
 
-    LVYTokenPage = new LVYToken(platformStyle);
+    ALVTokenPage = new ALVToken(platformStyle);
 
     stakePage = new StakePage(platformStyle);
     delegationPage = new DelegationPage(platformStyle);
@@ -88,7 +88,7 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
     addWidget(createContractPage);
     addWidget(sendToContractPage);
     addWidget(callContractPage);
-    addWidget(LVYTokenPage);
+    addWidget(ALVTokenPage);
     addWidget(stakePage);
     addWidget(delegationPage);
     addWidget(superStakerPage);
@@ -119,8 +119,8 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
     connect(createContractPage, &CreateContract::message, this, &WalletView::message);
     // Pass through messages from sendToContractPage
     connect(sendToContractPage, &SendToContract::message, this, &WalletView::message);
-    // Pass through messages from LVYTokenPage
-    connect(LVYTokenPage, &LVYToken::message, this, &WalletView::message);
+    // Pass through messages from ALVTokenPage
+    connect(ALVTokenPage, &ALVToken::message, this, &WalletView::message);
     // Pass through messages from delegationPage
     connect(delegationPage, &DelegationPage::message, this, &WalletView::message);
     // Pass through messages from superStakerPage
@@ -141,7 +141,7 @@ void WalletView::setClientModel(ClientModel *_clientModel)
     createContractPage->setClientModel(_clientModel);
     sendToContractPage->setClientModel(_clientModel);
     callContractPage->setClientModel(_clientModel);
-    LVYTokenPage->setClientModel(_clientModel);
+    ALVTokenPage->setClientModel(_clientModel);
     stakePage->setClientModel(_clientModel);
     delegationPage->setClientModel(_clientModel);
     superStakerPage->setClientModel(_clientModel);
@@ -159,7 +159,7 @@ void WalletView::setWalletModel(WalletModel *_walletModel)
     createContractPage->setModel(_walletModel);
     sendToContractPage->setModel(_walletModel);
     callContractPage->setModel(_walletModel);
-    LVYTokenPage->setModel(_walletModel);
+    ALVTokenPage->setModel(_walletModel);
     stakePage->setWalletModel(_walletModel);
     delegationPage->setModel(_walletModel);
     superStakerPage->setModel(_walletModel);
@@ -293,7 +293,7 @@ void WalletView::gotoCallContractPage()
 
 void WalletView::gotoTokenPage()
 {
-    setCurrentWidget(LVYTokenPage);
+    setCurrentWidget(ALVTokenPage);
 }
 
 void WalletView::gotoStakePage()

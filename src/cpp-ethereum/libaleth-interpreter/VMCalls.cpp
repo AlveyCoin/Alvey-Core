@@ -118,7 +118,7 @@ void VM::caseCreate()
     updateMem(memNeed(initOff, initSize));
     updateIOGas();
 
-#ifdef LVY_BUILD
+#ifdef ALV_BUILD
     if (endowment) BOOST_THROW_EXCEPTION(CreateWithValue());
 #endif
 

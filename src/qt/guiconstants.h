@@ -47,7 +47,7 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "AlveyCoin"
-#define QAPP_ORG_DOMAIN "alvey.org"
+#define QAPP_ORG_DOMAIN "alveychain.com"
 #define QAPP_APP_NAME_DEFAULT "AlveyCoin-Qt"
 #define QAPP_APP_NAME_TESTNET "AlveyCoin-Qt-testnet"
 #define QAPP_APP_NAME_REGTEST "AlveyCoin-Qt-regtest"
@@ -59,12 +59,12 @@ static constexpr uint64_t GB_BYTES{1000000000};
 static constexpr int DEFAULT_PRUNE_TARGET_GB{2};
 
 /* Mainnet alvey explorer uri */
-#define LVY_INFO_MAINNET "<a href='https://alvey.info/%1/%2'>%2</a>"
+#define ALV_INFO_MAINNET "<a href='https://alvey.info/%1/%2'>%2</a>"
 
 /* Testnet alvey explorer uri */
-#define LVY_INFO_TESTNET "<a href='https://testnet.alvey.info/%1/%2'>%2</a>"
+#define ALV_INFO_TESTNET "<a href='https://testnet.alvey.info/%1/%2'>%2</a>"
 
 /* Hardware wallet interface uri */
-#define LVY_HWI_TOOL "<a href='https://github.com/alveyproject/HWI/tags'>HWI Tool</a>"
+#define ALV_HWI_TOOL "<a href='https://github.com/AlveyCoin/HWI/tags'>HWI Tool</a>"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

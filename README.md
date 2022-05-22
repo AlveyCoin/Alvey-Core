@@ -1,7 +1,7 @@
 What is AlveyCoin?
 -------------
 
-AlveyCoin is a decentralized blockchain project built on Bitcoin's UTXO model, with support for Ethereum Virtual Machine based smart contracts, and secured by a proof of stake consensus model. It achieves this through the revolutionary Account Abstraction Layer which allows the EVM to communicate with AlveyCoin's Bitcoin-like UTXO blockchain. For more general information about AlveyCoin as well as links to join our community, go to https://alvey.org
+AlveyCoin is a decentralized blockchain project built on Bitcoin's UTXO model, with support for Ethereum Virtual Machine based smart contracts, and secured by a proof of stake consensus model. It achieves this through the revolutionary Account Abstraction Layer which allows the EVM to communicate with AlveyCoin's Bitcoin-like UTXO blockchain. For more general information about AlveyCoin as well as links to join our community, go to https://alveychain.com
 
 Welcome to the AlveyCoin Ignition Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on AlveyCoin, we highly recommend using either testnet or regtest mode. 
 
@@ -22,20 +22,20 @@ These are some resources that might be helpful in understanding AlveyCoin.
 Basic usage resources:
 
 * [User guide](https://docs.alvey.site/en/)
-* [AlveyCoin-Qt Wallet Tutorial](https://github.com/alveyproject/documents/tree/master/en/AlveyCoin-Wallet-Tutorial#alvey-qt-wallet-tutorial)
-* [AlveyCoin staking tutorial](https://github.com/alveyproject/documents/tree/master/en/How-to-Stake-with-AlveyCoin)
-* [AlveyCoin tutorial on Raspberry Pi](https://github.com/alveyproject/documents/tree/master/en/AlveyCoin-on-Raspberry-Pi)
-* [Running AlveyCoin on Amazon AWS using AlveyCoin AMI](https://github.com/alveyproject/documents/tree/master/en/AlveyCoin-AWS)
-* [Encrypting and unlocking wallet](https://github.com/alveyproject/documents/tree/master/en/Encrypt-and-Unlock-AlveyCoin-Wallet)
-* [Testnet guide](https://github.com/alveyproject/documents/blob/master/en/Testnet-User-Guide.md)
-* [Block explorer](https://alvey.info), [Older explorer](https://explorer.alvey.org)
+* [AlveyCoin-Qt Wallet Tutorial](https://github.com/AlveyCoin/documents/tree/master/en/AlveyCoin-Wallet-Tutorial#alvey-qt-wallet-tutorial)
+* [AlveyCoin staking tutorial](https://github.com/AlveyCoin/documents/tree/master/en/How-to-Stake-with-AlveyCoin)
+* [AlveyCoin tutorial on Raspberry Pi](https://github.com/AlveyCoin/documents/tree/master/en/AlveyCoin-on-Raspberry-Pi)
+* [Running AlveyCoin on Amazon AWS using AlveyCoin AMI](https://github.com/AlveyCoin/documents/tree/master/en/AlveyCoin-AWS)
+* [Encrypting and unlocking wallet](https://github.com/AlveyCoin/documents/tree/master/en/Encrypt-and-Unlock-AlveyCoin-Wallet)
+* [Testnet guide](https://github.com/AlveyCoin/documents/blob/master/en/Testnet-User-Guide.md)
+* [Block explorer](https://alvey.info), [Older explorer](https://explorer.alveychain.com)
 
 
 Development resources:
 
-* [AlveyCoin Book - A Developer's Guide To LVY](http://book.alvey.site/en/)
+* [AlveyCoin Book - A Developer's Guide To ALV](http://book.alvey.site/en/)
 * [AlveyCoin contract usage](https://docs.alvey.site/en/ARC20-Token-Introduce.html)
-* [Deploying a custom token to AlveyCoin](https://blog.alvey.org/alvey-custom-token-walkthrough-467d725fa27d)
+* [Deploying a custom token to AlveyCoin](https://blog.alveychain.com/alvey-custom-token-walkthrough-467d725fa27d)
 * [AlveyCoinJS document](https://alveyproject.github.io/alveyjs-doc/)
 * [Smart contract ICO example](http://book.alvey.site/en/part3/ico.htm)
 * [Early example faucet contract](http://earlz.net/view/2017/06/30/2144/the-alvey-sparknet-faucet)
@@ -51,17 +51,17 @@ Developer's Tools
 -----------------
 
 * Smart contract deployment tool
-  * https://github.com/alveyproject/solar
+  * https://github.com/AlveyCoin/solar
 * DApp JavaScript Library
-  * https://github.com/alveyproject/alveyjs
+  * https://github.com/AlveyCoin/Alvey-Corejs
 * A toolkit for building alvey light wallets
-  * https://github.com/alveyproject/alveyjs-wallet
+  * https://github.com/AlveyCoin/Alvey-Corejs-wallet
 * CORS alveyd RPC proxy for DApp
-  * https://github.com/alveyproject/alveyportal
+  * https://github.com/AlveyCoin/Alvey-Coreportal
 * Docker images for running alvey services
-  * https://github.com/alveyproject/alvey-docker
-* alvey.info API that powers the block explorer and the LVY Web wallet
-  * https://github.com/alveyproject/alveyinfo-api#alveyinfo-api-documentation
+  * https://github.com/AlveyCoin/Alvey-Core-docker
+* alvey.info API that powers the block explorer and the ALV Web wallet
+  * https://github.com/AlveyCoin/Alvey-Coreinfo-api#alveyinfo-api-documentation
 
 
 What is AlveyCoin Core?
@@ -71,7 +71,7 @@ AlveyCoin Core is our primary mainnet wallet. It implements a full node and is c
 
 AlveyCoin Core currently implements the following:
 
-* Sending/Receiving LVY coins
+* Sending/Receiving ALV coins
 * Sending/Receiving ARC20 tokens on the AlveyCoin network
 * Staking and creating blocks for the AlveyCoin network
 * Creating and interacting with smart contracts
@@ -93,13 +93,13 @@ A browser wallet that supports the Ledger hardware wallet, offline cold wallet, 
 
 Web site https://alveywallet.org
 
-User documentation https://github.com/alveyproject/documents/tree/master/en/LVY-WebWallet-usage
+User documentation https://github.com/AlveyCoin/documents/tree/master/en/ALV-WebWallet-usage
 
 ### AlveyCoin Electrum
 
 A light wallet that supports the Ledger and Trezor hardware wallets and is based on the well-known Electrum wallet software. 
 
-Download: https://github.com/alveyproject/alvey-electrum/releases
+Download: https://github.com/AlveyCoin/Alvey-Core-electrum/releases
 
 ### iOS and Android Wallets
 
@@ -107,7 +107,7 @@ These wallets run on mobile devices and synchronize quickly.
 
 Android Download: https://play.google.com/store/apps/details?id=org.alvey.newwallet
 
-iOS Download: https://github.com/alveyproject/alvey-ios (open source, deprecated)
+iOS Download: https://github.com/AlveyCoin/Alvey-Core-ios (open source, deprecated)
 
 ### Ledger Chrome Wallet
 
@@ -121,13 +121,13 @@ How to install: https://ledger.zendesk.com/hc/en-us/articles/115003776913-How-to
 Make sure to check out these resources as well for more information and to keep up to date with all the latest news about AlveyCoin. At least 1 developer is always around, so if you're developing on AlveyCoin and need help, we'd love to welcome you to our community.
 
 *	@AlveyCoin on Twitter https://twitter.com/alvey
-* AlveyCoin blog https://blog.alvey.org/
+* AlveyCoin blog https://blog.alveychain.com/
 *	AlveyCoin Telegram Group https://t.me/alveyofficial, other languages available
 * AlveyCoin Discord https://discordapp.com/invite/wRfmkQ9
 *	/r/AlveyCoin on Reddit https://www.reddit.com/r/AlveyCoin/
-*	AlveyCoin.org https://alvey.org
+*	AlveyCoin.org https://alveychain.com
 *	AlveyCoin on Facebook https://www.facebook.com/AlveyCoinOfficial/
-*	AlveyCoin Forum https://forum.alvey.org
+*	AlveyCoin Forum https://forum.alveychain.com
 
 ### AlveyCoin Smart Contract Limitations
 
@@ -143,7 +143,7 @@ Make sure to check out these resources as well for more information and to keep 
 
 ### Validate and Reproduce Binaries
 
-AlveyCoin uses a tool called Gitian to make reproducible builds that can be verified by anyone. Instructions on setting up a Gitian VM and building AlveyCoin are provided in [Gitan Building](https://github.com/alveyproject/alvey/blob/master/doc/gitian-building.md)
+AlveyCoin uses a tool called Gitian to make reproducible builds that can be verified by anyone. Instructions on setting up a Gitian VM and building AlveyCoin are provided in [Gitan Building](https://github.com/AlveyCoin/Alvey-Core/blob/master/doc/gitian-building.md)
 
 ### Build on Ubuntu
 
@@ -159,7 +159,7 @@ This is a quick start script for compiling AlveyCoin on Ubuntu
     # If you want to build the Qt GUI:
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler qrencode
 
-    git clone https://github.com/alveyproject/alvey --recursive
+    git clone https://github.com/AlveyCoin/Alvey-Core --recursive
     cd alvey
 
     # Note autogen will prompt to install some more dependencies if needed
@@ -169,7 +169,7 @@ This is a quick start script for compiling AlveyCoin on Ubuntu
     
 ### Build on CentOS
 
-Here is a brief description for compiling AlveyCoin on CentOS, for more details please refer to [the specific document](https://github.com/alveyproject/alvey/blob/master/doc/build-unix.md)
+Here is a brief description for compiling AlveyCoin on CentOS, for more details please refer to [the specific document](https://github.com/AlveyCoin/Alvey-Core/blob/master/doc/build-unix.md)
 
     # Compiling boost manually
     sudo yum install python-devel bzip2-devel
@@ -189,7 +189,7 @@ Here is a brief description for compiling AlveyCoin on CentOS, for more details 
     sudo yum install qt5-qttools-devel protobuf-devel qrencode-devel
     
     # Building AlveyCoin
-    git clone --recursive https://github.com/alveyproject/alvey.git
+    git clone --recursive https://github.com/AlveyCoin/Alvey-Core.git
     cd alvey
     ./autogen.sh
     ./configure
@@ -220,7 +220,7 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 1. Clone the alvey source code and cd into `alvey`
 
-        git clone --recursive https://github.com/alveyproject/alvey.git
+        git clone --recursive https://github.com/AlveyCoin/Alvey-Core.git
         cd alvey
 
 2.  Build alvey-core:
@@ -250,10 +250,10 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/alveyproject/alvey/tags) are created
+completely stable. [Tags](https://github.com/AlveyCoin/Alvey-Core/tags) are created
 regularly to indicate new official, stable release versions of AlveyCoin.
 
-The contribution workflow is described in [CONTRIBUTING.md](https://github.com/alveyproject/alvey/blob/master/CONTRIBUTING.md)
+The contribution workflow is described in [CONTRIBUTING.md](https://github.com/AlveyCoin/Alvey-Core/blob/master/CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
 
 Testing

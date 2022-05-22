@@ -57,11 +57,11 @@ public:
     {
         if(instance().network == "main")
         {
-            return QString(LVY_INFO_MAINNET).arg("tx", txHash);
+            return QString(ALV_INFO_MAINNET).arg("tx", txHash);
         }
         else if(instance().network == "test")
         {
-            return QString(LVY_INFO_TESTNET).arg("tx", txHash);
+            return QString(ALV_INFO_TESTNET).arg("tx", txHash);
         }
 
         return txHash;

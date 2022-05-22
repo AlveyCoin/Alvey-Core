@@ -1,5 +1,5 @@
-#ifndef LVY_QT_TOKENTRANSACTIONDESC_H
-#define LVY_QT_TOKENTRANSACTIONDESC_H
+#ifndef ALV_QT_TOKENTRANSACTIONDESC_H
+#define ALV_QT_TOKENTRANSACTIONDESC_H
 
 #include <QObject>
 #include <QString>
@@ -26,4 +26,4 @@ private:
     static QString FormatTxStatus(interfaces::Wallet& wallet, const interfaces::TokenTx& wtx);
 };
 
-#endif // LVY_QT_TOKENTRANSACTIONDESC_H
+#endif // ALV_QT_TOKENTRANSACTIONDESC_H

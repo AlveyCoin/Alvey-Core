@@ -36,9 +36,9 @@ class AlveyCoinCombinedOutputsExceedGasLimitTest(BitcoinTestFramework):
         tx = CTransaction()
         tx.vin = [make_vin(self.node, int(20000*COIN))]
         tx.vout = [
-            CTxOut(0, CScript([b"\x04", CScriptNum(19998999), CScriptNum(LVY_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])),
-            CTxOut(0, CScript([b"\x04", CScriptNum(19998999), CScriptNum(LVY_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])),
-            CTxOut(0, CScript([b"\x04", CScriptNum(19998999), CScriptNum(LVY_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL]))
+            CTxOut(0, CScript([b"\x04", CScriptNum(19998999), CScriptNum(ALV_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])),
+            CTxOut(0, CScript([b"\x04", CScriptNum(19998999), CScriptNum(ALV_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL])),
+            CTxOut(0, CScript([b"\x04", CScriptNum(19998999), CScriptNum(ALV_MIN_GAS_PRICE), hex_str_to_bytes("00"), hex_str_to_bytes(contract_address), OP_CALL]))
         ]
         signed_tx_raw = self.node.signrawtransactionwithwallet(bytes_to_hex_str(tx.serialize()))['hex']
         #

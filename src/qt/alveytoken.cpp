@@ -15,9 +15,9 @@
 #include <QSizePolicy>
 #include <QMenu>
 
-LVYToken::LVYToken(const PlatformStyle *platformStyle, QWidget *parent) :
+ALVToken::ALVToken(const PlatformStyle *platformStyle, QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::LVYToken),
+    ui(new Ui::ALVToken),
     m_model(0),
     m_clientModel(0),
     m_tokenTransactionView(0)
@@ -48,9 +48,9 @@ LVYToken::LVYToken(const PlatformStyle *platformStyle, QWidget *parent) :
     new QVBoxLayout(ui->scrollArea);
     ui->scrollArea->setWidget(m_tokenList);
     ui->scrollArea->setWidgetResizable(true);
-    connect(m_tokenList, &TokenListWidget::sendToken, this, &LVYToken::on_sendToken);
-    connect(m_tokenList, &TokenListWidget::receiveToken, this, &LVYToken::on_receiveToken);
-    connect(m_tokenList, &TokenListWidget::addToken, this, &LVYToken::on_addToken);
+    connect(m_tokenList, &TokenListWidget::sendToken, this, &ALVToken::on_sendToken);
+    connect(m_tokenList, &TokenListWidget::receiveToken, this, &ALVToken::on_receiveToken);
+    connect(m_tokenList, &TokenListWidget::addToken, this, &ALVToken::on_addToken);
 
     contextMenu = new QMenu(m_tokenList);
     contextMenu->addAction(copySenderAction);
@@ -59,23 +59,23 @@ LVYToken::LVYToken(const PlatformStyle *platformStyle, QWidget *parent) :
     contextMenu->addAction(copyTokenAddressAction);
     contextMenu->addAction(removeTokenAction);
 
-    connect(copyTokenAddressAction, &QAction::triggered, this, &LVYToken::copyTokenAddress);
-    connect(copyTokenBalanceAction, &QAction::triggered, this, &LVYToken::copyTokenBalance);
-    connect(copyTokenNameAction, &QAction::triggered, this, &LVYToken::copyTokenName);
-    connect(copySenderAction, &QAction::triggered, this, &LVYToken::copySenderAddress);
-    connect(removeTokenAction, &QAction::triggered, this, &LVYToken::removeToken);
+    connect(copyTokenAddressAction, &QAction::triggered, this, &ALVToken::copyTokenAddress);
+    connect(copyTokenBalanceAction, &QAction::triggered, this, &ALVToken::copyTokenBalance);
+    connect(copyTokenNameAction, &QAction::triggered, this, &ALVToken::copyTokenName);
+    connect(copySenderAction, &QAction::triggered, this, &ALVToken::copySenderAddress);
+    connect(removeTokenAction, &QAction::triggered, this, &ALVToken::removeToken);
 
-    connect(m_tokenList, &TokenListWidget::customContextMenuRequested, this, &LVYToken::contextualMenu);
+    connect(m_tokenList, &TokenListWidget::customContextMenuRequested, this, &ALVToken::contextualMenu);
 
-    connect(m_sendTokenPage, &SendTokenPage::message, this, &LVYToken::message);
+    connect(m_sendTokenPage, &SendTokenPage::message, this, &ALVToken::message);
 }
 
-LVYToken::~LVYToken()
+ALVToken::~ALVToken()
 {
     delete ui;
 }
 
-void LVYToken::setModel(WalletModel *_model)
+void ALVToken::setModel(WalletModel *_model)
 {
     m_model = _model;
     m_addTokenPage->setModel(m_model);
@@ -85,8 +85,8 @@ void LVYToken::setModel(WalletModel *_model)
     if(m_model && m_model->getTokenItemModel())
     {
         // Set current token
-        connect(m_tokenList->tokenModel(), &QAbstractItemModel::dataChanged, this, &LVYToken::on_dataChanged);
-        connect(m_tokenList->tokenModel(), &QAbstractItemModel::rowsInserted, this, &LVYToken::on_rowsInserted);
+        connect(m_tokenList->tokenModel(), &QAbstractItemModel::dataChanged, this, &ALVToken::on_dataChanged);
+        connect(m_tokenList->tokenModel(), &QAbstractItemModel::rowsInserted, this, &ALVToken::on_rowsInserted);
         if(m_tokenList->tokenModel()->rowCount() > 0)
         {
             QModelIndex currentToken(m_tokenList->tokenModel()->index(0, 0));
@@ -95,29 +95,29 @@ void LVYToken::setModel(WalletModel *_model)
     }
 }
 
-void LVYToken::setClientModel(ClientModel *_clientModel)
+void ALVToken::setClientModel(ClientModel *_clientModel)
 {
     m_clientModel = _clientModel;
     m_sendTokenPage->setClientModel(_clientModel);
     m_addTokenPage->setClientModel(_clientModel);
 }
 
-void LVYToken::on_goToSendTokenPage()
+void ALVToken::on_goToSendTokenPage()
 {
     m_sendTokenPage->show();
 }
 
-void LVYToken::on_goToReceiveTokenPage()
+void ALVToken::on_goToReceiveTokenPage()
 {
     m_receiveTokenPage->show();
 }
 
-void LVYToken::on_goToAddTokenPage()
+void ALVToken::on_goToAddTokenPage()
 {
     m_addTokenPage->show();
 }
 
-void LVYToken::on_currentTokenChanged(QModelIndex index)
+void ALVToken::on_currentTokenChanged(QModelIndex index)
 {
     if(m_tokenList->tokenModel())
     {
@@ -148,7 +148,7 @@ void LVYToken::on_currentTokenChanged(QModelIndex index)
     }
 }
 
-void LVYToken::on_dataChanged(const QModelIndex &topLeft, const QModelIndex &bottomRight, const QVector<int> &roles)
+void ALVToken::on_dataChanged(const QModelIndex &topLeft, const QModelIndex &bottomRight, const QVector<int> &roles)
 {
     Q_UNUSED(bottomRight);
     Q_UNUSED(roles);
@@ -164,14 +164,14 @@ void LVYToken::on_dataChanged(const QModelIndex &topLeft, const QModelIndex &bot
     }
 }
 
-void LVYToken::on_currentChanged(QModelIndex current, QModelIndex previous)
+void ALVToken::on_currentChanged(QModelIndex current, QModelIndex previous)
 {
     Q_UNUSED(previous);
 
     on_currentTokenChanged(current);
 }
 
-void LVYToken::on_rowsInserted(QModelIndex index, int first, int last)
+void ALVToken::on_rowsInserted(QModelIndex index, int first, int last)
 {
     Q_UNUSED(index);
     Q_UNUSED(first);
@@ -184,7 +184,7 @@ void LVYToken::on_rowsInserted(QModelIndex index, int first, int last)
     }
 }
 
-void LVYToken::contextualMenu(const QPoint &point)
+void ALVToken::contextualMenu(const QPoint &point)
 {
     QModelIndex index = m_tokenList->indexAt(point);
     if(index.isValid())
@@ -194,7 +194,7 @@ void LVYToken::contextualMenu(const QPoint &point)
     }
 }
 
-void LVYToken::copyTokenAddress()
+void ALVToken::copyTokenAddress()
 {
     if(indexMenu.isValid())
     {
@@ -203,7 +203,7 @@ void LVYToken::copyTokenAddress()
     }
 }
 
-void LVYToken::copyTokenBalance()
+void ALVToken::copyTokenBalance()
 {
     if(indexMenu.isValid())
     {
@@ -212,7 +212,7 @@ void LVYToken::copyTokenBalance()
     }
 }
 
-void LVYToken::copyTokenName()
+void ALVToken::copyTokenName()
 {
     if(indexMenu.isValid())
     {
@@ -221,7 +221,7 @@ void LVYToken::copyTokenName()
     }
 }
 
-void LVYToken::copySenderAddress()
+void ALVToken::copySenderAddress()
 {
     if(indexMenu.isValid())
     {
@@ -230,7 +230,7 @@ void LVYToken::copySenderAddress()
     }
 }
 
-void LVYToken::removeToken()
+void ALVToken::removeToken()
 {
     QMessageBox::StandardButton btnRetVal = QMessageBox::question(this, tr("Confirm token remove"), tr("The selected token will be removed from the list. Are you sure?"),
         QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
@@ -244,19 +244,19 @@ void LVYToken::removeToken()
     }
 }
 
-void LVYToken::on_sendToken(const QModelIndex &index)
+void ALVToken::on_sendToken(const QModelIndex &index)
 {
     on_currentTokenChanged(index);
     on_goToSendTokenPage();
 }
 
-void LVYToken::on_receiveToken(const QModelIndex &index)
+void ALVToken::on_receiveToken(const QModelIndex &index)
 {
     on_currentTokenChanged(index);
     on_goToReceiveTokenPage();
 }
 
-void LVYToken::on_addToken()
+void ALVToken::on_addToken()
 {
     on_goToAddTokenPage();
 }

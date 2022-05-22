@@ -164,7 +164,7 @@ private:
     QAction* createContractAction = nullptr;
     QAction* sendToContractAction = nullptr;
     QAction* callContractAction = nullptr;
-    QAction* LVYTokenAction = nullptr;
+    QAction* ALVTokenAction = nullptr;
     QAction* stakeAction = nullptr;
     QAction* sendTokenAction = nullptr;
     QAction* receiveTokenAction = nullptr;

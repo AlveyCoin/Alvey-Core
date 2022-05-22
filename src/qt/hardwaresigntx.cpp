@@ -36,7 +36,7 @@ bool HardwareSignTx::askDevice(bool stake, QString* pFingerprint)
         QMessageBox msgBox;
         msgBox.setWindowTitle(tr("HWI tool not found"));
         msgBox.setTextFormat(Qt::RichText);
-        msgBox.setText(tr("HWI tool not found at path \"%1\".<br>Please download it from %2 and add the path to the settings.").arg(hwiToolPath, LVY_HWI_TOOL));
+        msgBox.setText(tr("HWI tool not found at path \"%1\".<br>Please download it from %2 and add the path to the settings.").arg(hwiToolPath, ALV_HWI_TOOL));
         msgBox.setStandardButtons(QMessageBox::Ok);
         msgBox.exec();
         return false;

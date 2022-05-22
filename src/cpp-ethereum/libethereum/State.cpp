@@ -4,7 +4,7 @@
 
 #include "State.h"
 
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
 #include "Block.h"
 #include "BlockChain.h"
 #endif
@@ -13,7 +13,7 @@
 #include "DatabasePaths.h"
 #include <libdevcore/Assertions.h>
 #include <libdevcore/DBFactory.h>
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
 #include <libdevcore/TrieHash.h>
 #endif
 #include <libevm/VMFactory.h>
@@ -662,7 +662,7 @@ std::pair<ExecutionResult, TransactionReceipt> State::execute(EnvInfo const& _en
     return make_pair(res, receipt);
 }
 
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
 void State::executeBlockTransactions(Block const& _block, unsigned _txCount,
     LastBlockHashesFace const& _lastHashes, SealEngineFace const& _sealEngine)
 {
@@ -775,7 +775,7 @@ std::ostream& dev::eth::operator<<(std::ostream& _out, State const& _s)
     return _out;
 }
 
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
 State& dev::eth::createIntermediateState(State& o_s, Block const& _block, unsigned _txIndex, BlockChain const& _bc)
 {
     o_s = _block.state();

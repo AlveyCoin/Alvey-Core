@@ -27,7 +27,7 @@ auto g_kind = VMKind::Legacy;
 ///
 /// This variable is only written once when processing command line arguments,
 /// so access is thread-safe.
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
 std::unique_ptr<EVMC> g_evmcDll;
 #endif
 
@@ -65,7 +65,7 @@ void setVMKind(const std::string& _name)
         }
     }
 
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
     // If no match for predefined VM names, try loading it as an EVMC VM DLL.
     g_kind = VMKind::DLL;
 
@@ -173,7 +173,7 @@ VMPtr VMFactory::create()
 VMPtr VMFactory::create(VMKind _kind)
 {
     static const auto default_delete = [](VMFace * _vm) noexcept { delete _vm; };
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
     static const auto null_delete = [](VMFace*) noexcept {};
 #endif
 
@@ -181,7 +181,7 @@ VMPtr VMFactory::create(VMKind _kind)
     {
     case VMKind::Interpreter:
         return {new EVMC{evmc_create_aleth_interpreter(), s_evmcOptions}, default_delete};
-#ifndef LVY_BUILD
+#ifndef ALV_BUILD
     case VMKind::DLL:
         assert(g_evmcDll != nullptr);
         // Return "fake" owning pointer to global EVMC DLL VM.

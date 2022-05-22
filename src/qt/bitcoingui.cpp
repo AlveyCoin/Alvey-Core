@@ -350,12 +350,12 @@ void BitcoinGUI::createActions()
     delegationAction = new QAction(tr("Delegations"), this);
     superStakerAction = new QAction(tr("Super Staking"), this);
 
-    LVYTokenAction = new QAction(platformStyle->MultiStatesIcon(":/icons/alveytoken"), tr("&LRC Tokens"), this);
-    LVYTokenAction->setStatusTip(tr("LRC Tokens (send, receive or add Tokens in list)"));
-    LVYTokenAction->setToolTip(LVYTokenAction->statusTip());
-    LVYTokenAction->setCheckable(true);
-    LVYTokenAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
-    tabGroup->addAction(LVYTokenAction);
+    ALVTokenAction = new QAction(platformStyle->MultiStatesIcon(":/icons/alveytoken"), tr("&ARC Tokens"), this);
+    ALVTokenAction->setStatusTip(tr("ARC Tokens (send, receive or add Tokens in list)"));
+    ALVTokenAction->setToolTip(ALVTokenAction->statusTip());
+    ALVTokenAction->setCheckable(true);
+    ALVTokenAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
+    tabGroup->addAction(ALVTokenAction);
 
 #ifdef ENABLE_WALLET
     // These showNormalIfMinimized are needed because Send Coins and Receive Coins
@@ -378,8 +378,8 @@ void BitcoinGUI::createActions()
     connect(sendToContractAction, SIGNAL(triggered()), this, SLOT(gotoSendToContractPage()));
     connect(callContractAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(callContractAction, SIGNAL(triggered()), this, SLOT(gotoCallContractPage()));
-    connect(LVYTokenAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-    connect(LVYTokenAction, SIGNAL(triggered()), this, SLOT(gotoTokenPage()));
+    connect(ALVTokenAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(ALVTokenAction, SIGNAL(triggered()), this, SLOT(gotoTokenPage()));
     connect(stakeAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
     connect(stakeAction, &QAction::triggered, this, &BitcoinGUI::gotoStakePage);
     connect(delegationAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -649,7 +649,7 @@ void BitcoinGUI::createToolBars()
         walletStakeActions.append(delegationAction);
         walletStakeActions.append(superStakerAction);
         appNavigationBar->mapGroup(walletStakeAction, walletStakeActions);
-        appNavigationBar->addAction(LVYTokenAction);
+        appNavigationBar->addAction(ALVTokenAction);
         appNavigationBar->buildUi();
         overviewAction->setChecked(true);
     }
@@ -686,7 +686,7 @@ void BitcoinGUI::setClientModel(ClientModel *_clientModel)
         // Check for updates
         if(_clientModel->getOptionsModel()->getCheckForUpdates() && alveyVersionChecker->newVersionAvailable())
         {
-            QString link = QString("<a href=%1>%2</a>").arg(LVY_RELEASES, LVY_RELEASES);
+            QString link = QString("<a href=%1>%2</a>").arg(ALV_RELEASES, ALV_RELEASES);
             QString message(tr("New version of AlveyCoin wallet is available on the AlveyCoin source code repository: <br /> %1. <br />It is recommended to download it and update this application").arg(link));
             QMessageBox::information(this, tr("Check for updates"), message);
         }
@@ -860,7 +860,7 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     receiveCoinsMenuAction->setEnabled(enabled);
     historyAction->setEnabled(enabled);
     smartContractAction->setEnabled(enabled);
-    LVYTokenAction->setEnabled(enabled);
+    ALVTokenAction->setEnabled(enabled);
     encryptWalletAction->setEnabled(enabled);
     backupWalletAction->setEnabled(enabled);
     restoreWalletAction->setEnabled(enabled);
@@ -1001,7 +1001,7 @@ void BitcoinGUI::gotoHistoryPage()
 
 void BitcoinGUI::gotoTokenPage()
 {
-    LVYTokenAction->setChecked(true);
+    ALVTokenAction->setChecked(true);
     if (walletFrame) walletFrame->gotoTokenPage();
 }
 

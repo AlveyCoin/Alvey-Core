@@ -29,9 +29,9 @@ packages:
 - "python3-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/alveyproject/alvey.git"
+- "url": "https://github.com/AlveyCoin/Alvey-Core.git"
   "dir": "alvey"
-- "url": "https://github.com/alveyproject/cpp-eth-alvey.git"
+- "url": "https://github.com/AlveyCoin/cpp-eth-alvey.git"
   "dir": "cpp-eth-alvey"
 files:
 - "MacOSX10.14.sdk.tar.gz"

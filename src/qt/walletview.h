@@ -21,7 +21,7 @@ class AddressBookPage;
 class CreateContract;
 class SendToContract;
 class CallContract;
-class LVYToken;
+class ALVToken;
 class StakePage;
 class DelegationPage;
 class SuperStakerPage;
@@ -74,7 +74,7 @@ private:
     CreateContract* createContractPage;
     SendToContract* sendToContractPage;
     CallContract* callContractPage;
-    LVYToken* LVYTokenPage;
+    ALVToken* ALVTokenPage;
     StakePage *stakePage;
     DelegationPage* delegationPage;
     SuperStakerPage* superStakerPage;

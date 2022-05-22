@@ -1,5 +1,5 @@
-#ifndef LVYLEDGER_H
-#define LVYLEDGER_H
+#ifndef ALVLEDGER_H
+#define ALVLEDGER_H
 
 #include <string>
 #include <vector>

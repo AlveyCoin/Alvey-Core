@@ -1,5 +1,5 @@
-#ifndef LVYDGP_H
-#define LVYDGP_H
+#ifndef ALVDGP_H
+#define ALVDGP_H
 
 #include <alvey/alveystate.h>
 #include <primitives/block.h>
