@@ -95,7 +95,7 @@ Web site https://alveywallet.org
 
 User documentation https://github.com/AlveyCoin/documents/tree/master/en/ALV-WebWallet-usage
 
-### AlveyCoin Electrum
+### Alvey Coin Core (A.C.C)
 
 A light wallet that supports the Ledger and Trezor hardware wallets and is based on the well-known Electrum wallet software. 
 
@@ -103,7 +103,7 @@ Download: https://github.com/AlveyCoin/Alvey-Core-electrum/releases
 
 ### iOS and Android Wallets
 
-These wallets run on mobile devices and synchronize quickly. 
+These wallets run on mobile devices and synchronize quickly. (Soon...) 
 
 Android Download: https://play.google.com/store/apps/details?id=org.alvey.newwallet
 
@@ -111,23 +111,20 @@ iOS Download: https://github.com/AlveyCoin/Alvey-Core-ios (open source, deprecat
 
 ### Ledger Chrome Wallet
 
-This light wallet runs in your Chrome browser as a browser extension. This wallet requires a Ledger device to use.
+This light wallet runs in your Chrome browser as a browser extension. This wallet requires a Ledger device to use. (Soon...)
 
-How to install: https://ledger.zendesk.com/hc/en-us/articles/115003776913-How-to-install-and-use-AlveyCoin-with-Ledger
+How to install: https://ledger.zendesk.com
 
 
 ### Community Resources
 
 Make sure to check out these resources as well for more information and to keep up to date with all the latest news about AlveyCoin. At least 1 developer is always around, so if you're developing on AlveyCoin and need help, we'd love to welcome you to our community.
 
-*	@AlveyCoin on Twitter https://twitter.com/alvey
-* AlveyCoin blog https://blog.alveychain.com/
-*	AlveyCoin Telegram Group https://t.me/alveyofficial, other languages available
-* AlveyCoin Discord https://discordapp.com/invite/wRfmkQ9
-*	/r/AlveyCoin on Reddit https://www.reddit.com/r/AlveyCoin/
-*	AlveyCoin.org https://alveychain.com
-*	AlveyCoin on Facebook https://www.facebook.com/AlveyCoinOfficial/
-*	AlveyCoin Forum https://forum.alveychain.com
+*	@AlveyChain on Twitter https://twitter.com/AlveyChain
+*	AlveyCoin Telegram Group https://t.me/alveychain, other languages soon will be available
+*	AlveyCoin Website https://alveychain.com
+*	AlveyCoin Oculus https://www.oculus.com/deeplink/?action=view&path=%2Fprofile%2F105412678873935&utm_medium=share&utm_source=oculus
+*	AlveyCoin Press https://forum.alveychain.com
 
 ### AlveyCoin Smart Contract Limitations
 
@@ -139,7 +136,7 @@ Make sure to check out these resources as well for more information and to keep 
 
 ----------
 
-# Building AlveyCoin Core
+# Building Alvey Coin Core
 
 ### Validate and Reproduce Binaries
 
