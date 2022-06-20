@@ -99,7 +99,7 @@ User documentation https://github.com/AlveyCoin/documents/tree/master/en/ALV-Web
 
 A light wallet that supports the Ledger and Trezor hardware wallets and is based on the well-known Electrum wallet software. 
 
-Download: https://github.com/AlveyCoin/Alvey-Core-electrum/releases
+Download: https://github.com/AlveyCoin/
 
 ### iOS and Android Wallets
 
@@ -120,11 +120,11 @@ How to install: https://ledger.zendesk.com
 
 Make sure to check out these resources as well for more information and to keep up to date with all the latest news about AlveyCoin. At least 1 developer is always around, so if you're developing on AlveyCoin and need help, we'd love to welcome you to our community.
 
-*	@AlveyChain on Twitter https://twitter.com/AlveyChain
-*	AlveyCoin Telegram Group https://t.me/alveychain, other languages soon will be available
-*	AlveyCoin Website https://alveychain.com
-*	AlveyCoin Oculus https://www.oculus.com/deeplink/?action=view&path=%2Fprofile%2F105412678873935&utm_medium=share&utm_source=oculus
-*	AlveyCoin Press https://forum.alveychain.com
+*	AlveyChain on Twitter https://twitter.com/AlveyChain
+*	AlveyChain Telegram Group https://t.me/alveychain, other languages soon will be available
+*	AlveyChain Website https://alveychain.com
+*	AlveyChain Oculus https://www.oculus.com/deeplink/?action=view&path=%2Fprofile%2F105412678873935&utm_medium=share&utm_source=oculus
+*	AlveyChain Press https://forum.alveychain.com
 
 ### AlveyCoin Smart Contract Limitations
 
