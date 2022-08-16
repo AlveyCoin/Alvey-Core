@@ -1,19 +1,7 @@
-What is AlveyCoin?
--------------
+How does AlveyCoin work?
+With support for Ethereum Virtual Machine based smart contracts, AlveyCoin is a decentralized blockchain project utilizing the UTXO model of Bitcoin, and secured by a proof-of-stake consensus model. The EVM communicates with AlveyCoin's Bitcoin-like UTXO blockchain through the revolutionary Account Abstraction Layer. For more general information about AlveyCoin as well as links to join our community, go to https://alveychain.com
 
-AlveyCoin is a decentralized blockchain project built on Bitcoin's UTXO model, with support for Ethereum Virtual Machine based smart contracts, and secured by a proof of stake consensus model. It achieves this through the revolutionary Account Abstraction Layer which allows the EVM to communicate with AlveyCoin's Bitcoin-like UTXO blockchain. For more general information about AlveyCoin as well as links to join our community, go to https://alveychain.com
-
-Welcome to the AlveyCoin Ignition Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on AlveyCoin, we highly recommend using either testnet or regtest mode. 
-
-The major features of the AlveyCoin network include:
-
-1. Compatibility with the Ethereum Virtual Machine, which allows for compatibility with most existing Solidity based smart contracts. No special solidity compiler is required to deploy your smart contract to AlveyCoin. 
-2. A Proof of Stake consensus system which is optimized for AlveyCoin's contract model. Any user can stake and help to secure the network. There is no voting, master nodes, or minimum amount required. There have been transactions as small as 2 AlveyCoin that have created blocks in the past. Staking from smart contracts is under development.
-3. The Decentralized Governance Protocol is completely implemented and functional, which allows certain network parameters to be modified without a fork or other network disruption. This currently controls parameters like block size, gas prices, etc. 
-4. Uses the UTXO transaction model and is compatible with Bitcoin, allowing for existing tooling and workflows to be used with AlveyCoin. This allows for the infamous SPV protocol to be used which is ideal for light wallets on mobile phones and IoT devices.
-
-Note: AlveyCoin Core is considered beta software. We make no warranties or guarantees of its security or stability.
-
+Welcome to the AlveyCoin Ignition Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on AlveyCoin, we highly recommend using either testnet or regtest mode.
 AlveyCoin Documentation and Usage Resources
 ---------------
 
