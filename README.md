@@ -1,27 +1,29 @@
-How does AlveyCoin work?
-With support for Ethereum Virtual Machine based smart contracts, AlveyCoin is a decentralized blockchain project utilizing the UTXO model of Bitcoin, and secured by a proof-of-stake consensus model. The EVM communicates with AlveyCoin's Bitcoin-like UTXO blockchain through the revolutionary Account Abstraction Layer. 
+What is Alvey Chain ?
+
+
+ Alvey is a decentralised blockchain with a proof-of-stake consensus model, meaning that the author of the subsequent block is selected at random based on how much cryptocurrency they have in their wallet and how mature that wallet is, continuously rotating addresses to ensure decentralisation and network participation. Blocks are usually built or minted rather than mined; there are also block rewards in addition to transaction fees, thus, builders receive a percentage of "interest" on the amount of funds they bet. This allows the chain to achieve high levels of security without excessive energy consumption, since to participate as an applicable active node for staking, is enough to have a Raspberry-Pi, laptop or 64-bit desktop PC which do not have such a high consumption compared to Proof of Work string mining rigs. Alvey supports the Bitcoin and Ethereum ecosystems. We use a pragmatic design approach to integrate metaverse and VR within the blockchain, allowing continuous development of real-world applications.. 
 
 For more general information about AlveyCoin as well as links to join our community, go to https://alveychain.com
 
-Welcome to the AlveyCoin Ignition Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on AlveyCoin, we highly recommend using either testnet or regtest mode.
+Welcome to the AlveyCoin Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on AlveyCoin, we highly recommend using the testnet.
 
 
 
-AlveyCoin Documentation and Usage Resources
+AlveyChain Documentation and Usage Resources
 ---------------
 
 These are some resources that might be helpful in understanding AlveyCoin.
 
 Basic usage resources:
 
-* [User guide](https://docs.alvey.site/en/)
+
 * [AlveyCoin-Qt Wallet Tutorial](https://github.com/AlveyCoin/documents/tree/master/en/AlveyCoin-Wallet-Tutorial#alvey-qt-wallet-tutorial)
 * [AlveyCoin staking tutorial](https://github.com/AlveyCoin/documents/tree/master/en/How-to-Stake-with-AlveyCoin)
 * [AlveyCoin tutorial on Raspberry Pi](https://github.com/AlveyCoin/documents/tree/master/en/AlveyCoin-on-Raspberry-Pi)
 * [Running AlveyCoin on Amazon AWS using AlveyCoin AMI](https://github.com/AlveyCoin/documents/tree/master/en/AlveyCoin-AWS)
 * [Encrypting and unlocking wallet](https://github.com/AlveyCoin/documents/tree/master/en/Encrypt-and-Unlock-AlveyCoin-Wallet)
 * [Testnet guide](https://github.com/AlveyCoin/documents/blob/master/en/Testnet-User-Guide.md)
-* [Block explorer](https://alvey.info), [Older explorer](https://explorer.alveychain.com)
+* [Block explorer](https://alveyscan.com), [Older explorer](https://alveyscan.com)
 
 
 Development resources:
