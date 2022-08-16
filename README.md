@@ -84,7 +84,7 @@ AlveyCoin Core uses a full node model, and thus requires downloading the entire 
 
 A browser wallet that supports the Ledger hardware wallet, offline cold wallet, and restoration from mobile wallets.
 
-Web site https://alveywallet.org
+Web site 
 
 User documentation https://github.com/AlveyCoin/documents/tree/master/en/ALV-WebWallet-usage
 
@@ -98,9 +98,9 @@ Download: https://github.com/AlveyCoin/
 
 These wallets run on mobile devices and synchronize quickly. (Soon...) 
 
-Android Download: https://play.google.com/store/apps/details?id=org.alvey.newwallet
+Android Download: 
 
-iOS Download: https://github.com/AlveyCoin/Alvey-Core-ios (open source, deprecated)
+iOS Download: (Soon..)
 
 ### Ledger Chrome Wallet
 
