@@ -1,7 +1,12 @@
 How does AlveyCoin work?
-With support for Ethereum Virtual Machine based smart contracts, AlveyCoin is a decentralized blockchain project utilizing the UTXO model of Bitcoin, and secured by a proof-of-stake consensus model. The EVM communicates with AlveyCoin's Bitcoin-like UTXO blockchain through the revolutionary Account Abstraction Layer. For more general information about AlveyCoin as well as links to join our community, go to https://alveychain.com
+With support for Ethereum Virtual Machine based smart contracts, AlveyCoin is a decentralized blockchain project utilizing the UTXO model of Bitcoin, and secured by a proof-of-stake consensus model. The EVM communicates with AlveyCoin's Bitcoin-like UTXO blockchain through the revolutionary Account Abstraction Layer. 
+
+For more general information about AlveyCoin as well as links to join our community, go to https://alveychain.com
 
 Welcome to the AlveyCoin Ignition Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on AlveyCoin, we highly recommend using either testnet or regtest mode.
+
+
+
 AlveyCoin Documentation and Usage Resources
 ---------------
 
