@@ -1,0 +1,6 @@
+usr/local/bin/alvey-qt usr/bin
+share/pixmaps/alvey32.xpm usr/share/pixmaps
+share/pixmaps/alvey16.xpm usr/share/pixmaps
+share/pixmaps/alvey128.png usr/share/pixmaps
+debian/alvey-qt.desktop usr/share/applications
+debian/alvey-qt.protocol usr/share/kde4/services/
